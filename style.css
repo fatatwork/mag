@@ -12,10 +12,12 @@ body {
 
 #header {
 	color: #fff;
+	min-width: 100%;
 	border-bottom: 1px dashed #fff;
-  	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
-  	display: block;
-  	padding: 14px 0 5px;
+	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
+	display: block;
+	padding: 12px 0 5px;
+	position: fixed;
 }
 
 #page_title {
@@ -58,6 +60,7 @@ body {
 	background-position: 70% 50%;
 	background-repeat: no-repeat;
 	padding-bottom: 30px;
+	padding-top: 60px;
 }
 
 #title_popular {
@@ -75,7 +78,7 @@ body {
 
 #title_categories > *{
 	padding-left: 30%;
-	padding-top: 50px;
+	padding-top: 2px;
 }
 
 .title_block > * {
@@ -114,8 +117,73 @@ body {
 
 #ellipses_img {
 	  height: 84px;
+	  margin-right: 114px;
 	  float: right;
 	  background: url('/design/ellipses.png') no-repeat;
 	  background-size: 70px;
 	  background-position: 0% 19%;
+}
+
+.rect {
+	  box-shadow: -6.5px 5.99px 10px 1px rgba( 0, 0, 0, .7 );
+	  height: 27px;
+	  margin: 10px 0 10px;
+}
+.rect span {
+	display: inline-block;
+	color: #fff;
+	vertical-align: middle;
+	margin-bottom: 17px;
+  	margin-left: 10px;
+  	float: right;
+  	margin-top: 2px;
+  margin-right: -70px;
+}
+
+#rate_rect1 {
+	 background-color: rgb( 255, 70, 13 );
+	 width: 50%;
+}
+
+#rate_rect2 {
+  background-color: rgb( 232, 96, 12 );
+ width: 40%;
+}
+
+#rate_rect3 {
+  background-color: rgb( 255, 135, 0 );
+	 width: 30%;
+}
+
+#rate_rect4 {
+  background-color: rgb( 255, 194, 13 );
+	 width: 25%;
+}
+
+#rate_rect5 {
+  background-color: rgb( 232, 154, 12 );
+	 width: 20%;
+}
+
+.eye_icon {
+	margin-right: -30px;
+	margin-top: 7px;
+	float: right;
+	display: inline-block;
+	margin-left: 6px;
+	width: 20px;
+	height: 20px;
+	background: url('/design/eye.png') no-repeat;
+	background-size: 20px;
+}
+
+.separator_rate {
+	float: right;
+    width: 2px;
+    height: 27px;
+    background: rgb(255,255,255);
+    display: inline-block;
+    margin-right: 76px;
+}
+
 }
