@@ -1,0 +1,121 @@
+@media only screen and (min-width: 917px) {
+html {
+	margin:0px;
+}
+body {
+	font-family: 'Open Sans', sans-serif;
+	color: #000;
+	font-size:16px;
+	background-color:#fff;
+	margin: 0px;
+}
+
+#header {
+	color: #fff;
+	border-bottom: 1px dashed #fff;
+  	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
+  	display: block;
+  	padding: 14px 0 5px;
+}
+
+#page_title {
+	padding-left: 20px;
+	font-size: 20px;
+	float: left;
+}
+
+#main_menu .separator {
+	margin-top: 8px;	
+}
+
+#main_menu{
+	margin-left:30%;
+	vertical-align: middle;
+	-webkit-margin-before: 0em;
+}
+
+#main_menu li {
+	padding: 4px;
+	display: inline;
+}
+
+.separator {
+    width: 1px;
+    height: 7px;
+    background: rgba(255,255,255,.7);
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#search_form {
+  float: right;
+  margin-top: -38px;
+}	
+
+#title_actual {
+	background: url('/design/stetoscope_img.png');
+	background-size: 40%;
+	background-position: 70% 50%;
+	background-repeat: no-repeat;
+	padding-bottom: 30px;
+}
+
+#title_popular {
+	background: url('/design/magazines.jpg');
+	background-size: 40%;
+  	background-position: 54% 100%;
+  	background-repeat: no-repeat;
+	padding-bottom: 70px;
+}
+
+#title_categories {
+	background: url('/design/bg-rules.gif');
+	padding-bottom: 70px;
+}
+
+#title_categories > *{
+	padding-left: 30%;
+	padding-top: 50px;
+}
+
+.title_block > * {
+	padding-left: 30%;
+	padding-top: 50px;
+}
+
+.block_title {
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+.white{
+	color: #fff;
+}
+
+.block_title span{
+	font-family: 'Lobster', cursive;
+}
+
+#stet_img {
+	height:84px;
+	float: left;
+	background: url('/design/stetoscope.png') no-repeat;
+	background-size: 70px;
+	background-position: 100% 100%;
+}
+
+#check_img {
+	height:84px;
+	float: left;
+	background: url('/design/check_mark.png') no-repeat;
+	background-size: 70px;
+	background-position: 100% 100%;
+}
+
+#ellipses_img {
+	  height: 84px;
+	  float: right;
+	  background: url('/design/ellipses.png') no-repeat;
+	  background-size: 70px;
+	  background-position: 0% 19%;
+}
