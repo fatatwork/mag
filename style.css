@@ -10,6 +10,14 @@ body {
 	margin: 0px;
 }
 
+.clearfix:after {
+	content : ".";
+	visibility : hidden;
+	display : block;
+	height : 0;
+	clear : both;
+}
+
 #header {
 	color: #fff;
 	min-width: 100%;
@@ -63,12 +71,70 @@ body {
 	padding-top: 60px;
 }
 
+#content_actual {
+	padding: 21px 0 21px 24%;
+}
+
+#content_actual > * {
+	max-width: 70%;
+}
+
+.article_actual {
+	background: url('/design/arrow.png') no-repeat;
+ 	background-size: 3%;
+  	background-position: 0% 47%;
+  	display: inline-block;
+  	padding: 10px 0 10px 36px;
+  	font-size: 14px;
+  	color: #fff;
+}
+
+.article_actual span {
+	float: right;
+	padding-right: 40px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
 #title_popular {
 	background: url('/design/magazines.jpg');
 	background-size: 40%;
   	background-position: 54% 100%;
   	background-repeat: no-repeat;
 	padding-bottom: 70px;
+}
+
+#rate_lines, #articles_popular{
+	float: left;
+}
+
+#rate_lines {
+	width: 40%;
+}
+
+#articles_popular {
+	width: 57%;
+	line-height: 37px;
+}
+
+div#articles_popular {
+	display:inline;
+	padding-left: 10px;
+	padding-top: 6px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+#articles_popular a {
+	border-bottom: 1px dashed blue;
+	color:inherit;
+	text-decoration:none;
+}
+
+#article1:hover, #article2:hover, #article3:hover, #article4:hover, #article5:hover {
+	border-bottom: 1px dashed #000;
+	color:blue;
 }
 
 #title_categories {
@@ -125,10 +191,11 @@ body {
 }
 
 .rect {
-	  box-shadow: -6.5px 5.99px 10px 1px rgba( 0, 0, 0, .7 );
-	  height: 27px;
-	  margin: 10px 0 10px;
+	box-shadow: -6.5px 5.99px 10px 1px rgba( 0, 0, 0, .7 );
+	height: 27px;
+	margin: 10px 0 10px;
 }
+
 .rect span {
 	display: inline-block;
 	color: #fff;
@@ -137,32 +204,99 @@ body {
   	margin-left: 10px;
   	float: right;
   	margin-top: 2px;
-  margin-right: -70px;
+ 	margin-right: -70px;
+}
+
+.separator_rate, .eye_icon, .rect span {
+	-webkit-animation-name: appearNumbers;
+    -webkit-animation-duration: 6s;
+	animation-name: appearNumbers;
+    animation-duration: 6s;
+}
+
+#rate_rect1{
+	-webkit-animation: left_to_right1 4s;
+	animation: left_to_right1 4s;
+}
+
+#rate_rect2{
+	-webkit-animation: left_to_right2 4s;
+	animation: left_to_right2 4s;
+}
+
+#rate_rect3{
+	-webkit-animation: left_to_right3 4s;
+	animation: left_to_right3 4s;
+}
+
+#rate_rect4{
+	-webkit-animation: left_to_right4 4s;
+	animation: left_to_right4 4s;
+}
+
+#rate_rect5{
+	-webkit-animation: left_to_right5 4s;
+	animation: left_to_right5 4s;
 }
 
 #rate_rect1 {
-	 background-color: rgb( 255, 70, 13 );
-	 width: 50%;
+	background-color: rgb( 255, 70, 13 );
+	width: 100%;
 }
 
 #rate_rect2 {
-  background-color: rgb( 232, 96, 12 );
- width: 40%;
+  	background-color: rgb( 232, 96, 12 );
+ 	width: 80%;
 }
 
 #rate_rect3 {
-  background-color: rgb( 255, 135, 0 );
-	 width: 30%;
+  	background-color: rgb( 255, 135, 0 );
+	width: 60%;
 }
 
 #rate_rect4 {
-  background-color: rgb( 255, 194, 13 );
-	 width: 25%;
+  	background-color: rgb( 255, 194, 13 );
+	width: 40%;
 }
 
 #rate_rect5 {
-  background-color: rgb( 232, 154, 12 );
-	 width: 20%;
+  	background-color: rgb( 232, 154, 12 );
+	width: 29%;
+}
+
+#cat_block {
+	padding-left: 29%;
+	margin-top: 15px;
+	max-width: 44%;
+}
+
+.rect_cat {
+	display: inline-block;
+	color: #fff;
+	font-size: 21px;
+  	background-color: rgb( 104, 206, 248 );
+  	padding: 5px 12px;
+  	margin-top: 4px;
+}
+
+.rect_cat:hover, .rect:hover {
+	opacity: 0.9;
+}
+
+.cat1 {
+	background-color: rgb( 104, 206, 248 );
+}
+
+.cat2 {
+  	background-color: rgb( 35, 160, 191 );
+}
+
+.cat3 {
+	background-color: rgb( 23, 109, 140 );
+}
+
+.cat4 {
+  	background-color: rgb( 20, 91, 117 );
 }
 
 .eye_icon {
@@ -184,6 +318,92 @@ body {
     background: rgb(255,255,255);
     display: inline-block;
     margin-right: 76px;
+}
+
+.blue_bg {
+    background : -moz-radial-gradient(50% -40.98%, circle farthest-corner, rgba(193, 220, 242, 1) 0%, rgba(181, 215, 240, 1) 7.03%, rgba(151, 203, 235, 1) 19.61%, rgba(101, 184, 227, 1) 36.27%, rgba(32, 157, 215, 1) 56.2%, rgba(30, 156, 215, 1) 56.74%, rgba(0, 117, 190, 1) 86.52%);
+    background : -webkit-radial-gradient(50% -40.98%, circle farthest-corner, rgba(193, 220, 242, 1) 0%, rgba(181, 215, 240, 1) 7.03%, rgba(151, 203, 235, 1) 19.61%, rgba(101, 184, 227, 1) 36.27%, rgba(32, 157, 215, 1) 56.2%, rgba(30, 156, 215, 1) 56.74%, rgba(0, 117, 190, 1) 86.52%);
+    background : -webkit-gradient(radial,50% -40.98% ,0 , 50% -40.98%, 1209.85 ,color-stop(0,rgba(193, 220, 242, 1) ),color-stop(0.0703,rgba(181, 215, 240, 1) ),color-stop(0.1961,rgba(151, 203, 235, 1) ),color-stop(0.3627,rgba(101, 184, 227, 1) ),color-stop(0.562,rgba(32, 157, 215, 1) ),color-stop(0.5674,rgba(30, 156, 215, 1) ),color-stop(0.8652,rgba(0, 117, 190, 1) ));
+    background : -o-radial-gradient(50% -40.98%, circle farthest-corner, rgba(193, 220, 242, 1) 0%, rgba(181, 215, 240, 1) 7.03%, rgba(151, 203, 235, 1) 19.61%, rgba(101, 184, 227, 1) 36.27%, rgba(32, 157, 215, 1) 56.2%, rgba(30, 156, 215, 1) 56.74%, rgba(0, 117, 190, 1) 86.52%);
+    background : -ms-radial-gradient(50% -40.98%, circle farthest-corner, rgba(193, 220, 242, 1) 0%, rgba(181, 215, 240, 1) 7.03%, rgba(151, 203, 235, 1) 19.61%, rgba(101, 184, 227, 1) 36.27%, rgba(32, 157, 215, 1) 56.2%, rgba(30, 156, 215, 1) 56.74%, rgba(0, 117, 190, 1) 86.52%);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Stlye=2);"
+    background : radial-gradient(50% -40.98%, circle farthest-corner, rgba(193, 220, 242, 1) 0%, rgba(181, 215, 240, 1) 7.03%, rgba(151, 203, 235, 1) 19.61%, rgba(101, 184, 227, 1) 36.27%, rgba(32, 157, 215, 1) 56.2%, rgba(30, 156, 215, 1) 56.74%, rgba(0, 117, 190, 1) 86.52%);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Stlye=2);
+}
+
+
+.hidden{
+	opacity:0;
+}
+
+.visible{
+	opacity:1;
+}
+
+/*Анимация выезжания полосок рейтинга*/
+
+@keyframes left_to_right1 {
+	from {width: 0%;}
+	to {width: 100%;}
+}
+
+@-webkit-keyframes left_to_right1{
+	from {width: 0%;}
+	to {width: 100%;}
+}
+
+@keyframes left_to_right2 {
+	from {width: 0%;}
+	to {width: 80%;}
+}
+
+@-webkit-keyframes left_to_right2 {
+	from {width: 0%;}
+	to {width: 80%;}
+}
+
+@keyframes left_to_right3 {
+	from {width: 0%;}
+	to {width: 60%;}
+}
+
+@-webkit-keyframes left_to_right3 {
+	from {width: 0%;}
+	to {width: 60%;}
+}
+
+@keyframes left_to_right4 {
+	from {width: 0%;}
+	to {width: 40%;}
+}
+
+@-webkit-keyframes left_to_right4 {
+	from {width: 0%;}
+	to {width: 40%;}
+}
+
+@keyframes left_to_right5 {
+	from {width: 0%;}
+	to {width: 35%;}
+}
+
+@-webkit-keyframes left_to_right5 {
+	from {width: 0%;}
+	to {width: 35%;}
+}
+
+/*Анимация появления счетчиков просмотров*/
+
+@keyframes appearNumbers {
+	0% {display:none; opacity: 0;}
+	50% {display:none; opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@-webkit-keyframes appearNumbers {
+	0% {display:none; opacity: 0;}
+	50% {display:none; opacity: 0;}
+	100% {opacity: 1;}
 }
 
 }
