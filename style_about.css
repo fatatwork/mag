@@ -1,0 +1,67 @@
+@media only screen and (min-width: 917px) {
+
+#title_about {
+  background: url('/design/editors_glasses.jpg');
+  background-size: 100%;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  height: 212px;
+}
+.content_block, #title_separator, #pen_img, #info_img {
+  float: left;
+}
+
+#title_separator {
+  background: url('/design/doctor_write.jpg');
+  background-size: 100%;
+  background-position: 70% 69%;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  width: 100%;
+  height: 172px;
+}
+
+#address_block {
+  display: inline-block;
+	padding: 10px;
+  margin-top: 15px;
+  margin-left: 30%;
+	background: rgba(255,255,255, .7);
+}
+
+.content {
+  padding: 24px 20% 24px 20%;
+}
+
+.content_block{
+  margin: 17px;
+  max-width: 45%;
+}
+
+.content_title {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+#pen_img {
+  background: url(/design/pen.png) no-repeat;
+  background-size: 74%;
+  background-position: 0% 0%;
+  height: 52px;
+  width: 50px;
+}
+
+#info_img {
+  background: url(/design/info.png) no-repeat;
+  background-size: 74%;
+  background-position: 0% 0%;
+  height: 52px;
+  width: 50px;
+}
+
+.content_block  .content_button_footer{
+  margin: 15px 0 15px 0;
+}
