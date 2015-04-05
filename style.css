@@ -407,3 +407,21 @@ div#articles_popular {
 }
 
 }
+
+
+/*------------------------------------------------------------*/
+#title_about {
+  background: url('/design/editors_glasses.jpg');
+  background-size: 100%;
+  background-position: 70% 50%;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  padding-top: 60px;
+  height: 182px;
+}
+
+#address_block {
+	display: inline;
+	background: rgba(255,255,255, .7);
+	max-width: 30%;
+}
