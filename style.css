@@ -109,15 +109,22 @@ body {
 	background-color: RGBA(101, 184, 227, 1);
 	color:black;
 }
+
 .category_button{
- 	border: 2px solid white;
+	border: 2px solid white;
  	text-decoration: none;
- 	margin-left: 25%;
+ 	margin-left: 43%;
  	margin-top: 2%;
  	padding: 5px 7px 5px 7px;
- 	width: 191px;
+ 	padding-left: 5px!important;
+ 	width: 164px;
  	color: white;
  	font-size: 18px;
+}
+.category_button:hover{
+	opacity: 0.92;
+	background-color: white;
+	color: black;
 }
 .article_actual {
 	background: url('/design/arrow.png') no-repeat;
@@ -201,7 +208,7 @@ div#articles_popular {
 
 /*колонки номеров журналов по годам*/
 #issues{
-	height:600px;
+	height: 500px;
 	padding-top: 50px;
 }
 .left_column{
@@ -239,6 +246,52 @@ div#articles_popular {
 	text-align: left;
 	padding-left: 30px;
 }
+/*---------------------------------------------------*/
+
+/*Дeскрипшены внизу страницы*/
+.credits{
+	font-family: 'Open Sans';
+	text-align: left;
+	color: gray;
+}
+.credits h1{
+	font-size: 20px;
+}
+.credits h2{
+	font-size: 15px;
+}
+#footer{
+	  border-top: 2px solid gray;
+	  margin-top:20px;
+	  padding-left: 100px;
+}
+/*строка поиска*/
+.search{
+  margin-bottom: 2px;
+  margin-top: 1px;
+}
+.search_img{
+  margin: 5px 5px 0px -4px;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: top;
+}
+.search_input{
+  font-size: 11px;
+  width: 180px;
+  padding: 0;
+  height: 15px;
+  border: 1px #7a88e9 solid;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  padding-left: 5px;
+}
+
 .title_block > * {
      padding-left: 30%;
      padding-top: 50px;
