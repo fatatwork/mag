@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 @media only screen and (min-width: 917px) {
 
+=======
+/*------------------------------------------------------------*/
+>>>>>>> 847358e3879d3ca985230ffefc533635fb20524d
 #title_about {
   background: url('/design/editors_glasses.jpg');
   background-size: 100%;
@@ -7,6 +11,7 @@
   background-repeat: no-repeat;
   padding-bottom: 30px;
   padding-top: 60px;
+<<<<<<< HEAD
   height: 212px;
 }
 .content_block, #title_separator, #pen_img, #info_img {
@@ -64,4 +69,13 @@
 
 .content_block  .content_button_footer{
   margin: 15px 0 15px 0;
+=======
+  height: 182px;
+}
+
+#address_block {
+	padding-top: 50px;
+	background: rgba(255,255,255, .7);
+	max-width: 30%;
+>>>>>>> 847358e3879d3ca985230ffefc533635fb20524d
 }
