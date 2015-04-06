@@ -39,9 +39,10 @@ body {
 }
 
 #main_menu{
-	margin-left:30%;
-	vertical-align: middle;
-	-webkit-margin-before: 0em;
+  margin-left: 7%;
+  float: left;
+  vertical-align: middle;
+  -webkit-margin-before: 0em;
 }
 
 #main_menu li {
@@ -59,7 +60,6 @@ body {
 
 #search_form {
   float: right;
-  margin-top: -38px;
 }	
 
 #title_actual {
@@ -70,9 +70,6 @@ body {
 	padding-bottom: 30px;
 	padding-top: 60px;
 }
-#title_mag{
-
-}
 
 #content_actual {
 	padding: 21px 0 21px 24%;
@@ -82,11 +79,11 @@ body {
 	max-width: 70%;
 }
 .content_button_header, .content_button_footer{
- 	text-decoration: none;
- 	text-align: center;
- 	padding: 5px 7px 5px 7px;
- 	width: 191px;
- 	font-size: 18px;
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px 12px 5px 12px;
+  font-size: 18px;
 }
 .content_button_header{
 	margin-top: 2%;
@@ -111,13 +108,12 @@ body {
 }
 
 .category_button{
+	display: inline-block;
 	border: 2px solid white;
- 	text-decoration: none;
+ 	text-align: center;
  	margin-left: 43%;
- 	margin-top: 2%;
- 	padding: 5px 7px 5px 7px;
- 	padding-left: 5px!important;
- 	width: 164px;
+ 	margin-top: 23px;
+ 	padding: 5px 12px 5px 12px !important;
  	color: white;
  	font-size: 18px;
 }
@@ -186,7 +182,7 @@ div#articles_popular {
 
 #title_categories {
 	background: url('/design/bg-rules.gif');
-	padding-bottom: 70px;
+	padding-bottom: 26px;
 }
 
 #title_categories > *{
@@ -196,12 +192,12 @@ div#articles_popular {
 #all-issues{
   background: url('/design/newsandpublications-left.jpg') no-repeat;
   background-size: 100%;
-  background-position: 50% 93%;
+  background-position: 0% 80%;
   height: 254px;
 }
 #all-issues-title{
-	padding-left: 68%;
-	padding-top: 4%;
+	padding-left: 61%;
+	padding-top: 33px;
 	width: 400px;
 	color: white;
 }
@@ -255,14 +251,14 @@ div#articles_popular {
 	color: gray;
 }
 .credits h1{
-	font-size: 20px;
+	font-size: 17px;
 }
 .credits h2{
 	font-size: 15px;
 }
 #footer{
 	  border-top: 2px solid gray;
-	  margin-top:20px;
+	  margin-top: 70px;
 	  padding-left: 100px;
 }
 /*строка поиска*/
@@ -280,8 +276,9 @@ div#articles_popular {
   vertical-align: top;
 }
 .search_input{
-  font-size: 11px;
-  width: 180px;
+font-size: 11px;
+  min-width: 113px;
+  width: 183px;
   padding: 0;
   height: 15px;
   border: 1px #7a88e9 solid;
@@ -304,6 +301,7 @@ div#articles_popular {
 
 .white{
 	color: #fff;
+	float: left;
 }
 
 .block_title span{
@@ -329,10 +327,11 @@ div#articles_popular {
 #ellipses_img {
 	  height: 84px;
 	  margin-right: 114px;
-	  float: right;
+	  float: left;
 	  background: url('/design/ellipses.png') no-repeat;
 	  background-size: 70px;
 	  background-position: 0% 19%;
+	  margin-left: 18px;
 }
 #mag_img{
   height: 53px;
@@ -542,7 +541,7 @@ div#articles_popular {
 
 @-webkit-keyframes left_to_right5 {
 	from {width: 0%;}
-	to {width: 35%;}
+	to {width: 29%;}
 }
 
 /*Анимация появления счетчиков просмотров*/
