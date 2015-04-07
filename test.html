@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Тестирование ссылки</title>
+<body>
+	<a id="mylink" href="http://example.com">Щелкни</a><br />
+	<script type="text/javascript">
+	function $(id){
+		return document.getElementById(id);
+	}
+	url = $('mylink').href;
+	document.write('URL-адрес: ' + url + '<br />');
+	document.write(document.links.length);
+	</script>
+</body>
+</head>
+</html>
