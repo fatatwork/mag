@@ -49,6 +49,10 @@ body {
 	padding: 4px;
 	display: inline;
 }
+#main_menu a{
+	color: white;
+	text-decoration: none;
+}
 
 .separator {
     width: 1px;
