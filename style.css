@@ -26,6 +26,7 @@ body {
 	display: block;
 	padding: 12px 0 5px;
 	position: fixed;
+	z-index: 600;
 }
 
 #page_title {

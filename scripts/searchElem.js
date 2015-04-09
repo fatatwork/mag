@@ -17,10 +17,27 @@ $(document).ready(function(){ /*Когда документ загружен*/
     }); /*Функция добавляет id с CSS анимацией*/
 
     $('#cat_block').viewportChecker({
-        classToAdd: 'visible', offset: 200, repeat: false, callbackFunction: function(){
-            var obj_arr = searchObjects("rect_cat");
-            addClassTo(obj_arr, "pulse");
-        }
+        classToAdd: 'visible animated flipInX', offset: 200, repeat: false
+    });
+    
+    $('#btn1').viewportChecker({
+        classToAdd: 'visible animated flipInX', offset: 20, repeat: false
+    });    
+    
+    $('#issues').viewportChecker({
+        classToAdd: 'visible animated zoomInUp', offset: 200, repeat: false
+    });
+
+    $('#btn2').viewportChecker({
+        classToAdd: 'visible animated zoomInUp', offset: 20, repeat: false
+    });
+
+    $('#block1, #block2').viewportChecker({
+        classToAdd: 'visible animated zoomInUp', offset: 200, repeat: false
+    });
+
+    $('#block3, #block4').viewportChecker({
+        classToAdd: 'visible animated zoomInUp', offset: 100, repeat: false
     });
 });
 
