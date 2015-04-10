@@ -21,15 +21,15 @@ $(document).ready(function(){ /*Когда документ загружен*/
     });
     
     $('#btn1').viewportChecker({
-        classToAdd: 'visible animated flipInX', offset: 20, repeat: false
+        classToAdd: 'visible animated fadeIn', offset: 20, repeat: false
     });    
     
     $('#issues').viewportChecker({
-        classToAdd: 'visible animated zoomInUp', offset: 200, repeat: false
+        classToAdd: 'visible animated zoomInUp', offset: 100, repeat: false
     });
 
     $('#btn2').viewportChecker({
-        classToAdd: 'visible animated zoomInUp', offset: 20, repeat: false
+        classToAdd: 'visible animated fadeIn', offset: 20, repeat: false
     });
 
     $('#block1, #block2').viewportChecker({

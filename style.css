@@ -299,6 +299,10 @@ font-size: 11px;
      padding-top: 50px;
  }
 
+.block_title, #ellipses_img{
+	  margin-top: 35px;
+}
+
 .block_title {
 	font-size: 30px;
 	margin-left: 10px;

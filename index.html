@@ -15,21 +15,19 @@
 
     <script type="text/javascript" src="scripts/parallax/jquery.parallax-1.1.3.js"></script>
     <script type="text/javascript" src="scripts/parallax/parallax-controller.js"></script>
-
-    <script type="text/javascript" src="scripts/parallax/jquery.localscroll-1.2.7-min.js"></script>
-    <script type="text/javascript" src="scripts/parallax/jquery.scrollTo-1.4.2-min.js"></script>
+    
 </head>
 <body>
 <div id="header">
     <div id="page_title">Медицинский журнал</div>
     <ul id="main_menu">
-        <li><a href="#title_actual">Новые статьи</a></li>
+        <li><a class="nav" href="#title_actual">Новые статьи</a></li>
         <div class="separator"></div>
-        <li><a href="#title_popular">Популярные</a></li>
+        <li><a class="nav" href="#title_popular">Популярные</a></li>
         <div class="separator"></div>
-        <li><a href="#title_categories">Категории</a></li>
+        <li><a class="nav" href="#title_categories">Категории</a></li>
         <div class="separator"></div>
-        <li><a href="#all-issues">Все выпуски</a></li>
+        <li><a class="nav" href="#all-issues">Все выпуски</a></li>
         <div class="separator"></div>
         <li><a href="/about.html">О журнале</a></li>
     </ul>
@@ -38,6 +36,7 @@
         <input type="image" title="Поиск" alt="Поиск" class="search_img" src="/design/search_img.gif">
     </form>    
 </div>
+<div id="main_content">
 <div id="title_actual" class="title_block">
     <div id="stet_img"></div>
     <div class="block_title"><span>Актуальные</span>
@@ -165,6 +164,7 @@
     материалы принадлежат их авторам.
     </h2>
     <div>
+</div>
 </div>
 </body>
     <script type="text/javascript" src="/scripts/searchElem.js"></script>
