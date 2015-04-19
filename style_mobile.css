@@ -11,7 +11,7 @@
   	background-position: 10px 47%;
   	display: inline-block;
 	font-size: inherit;
-	padding: 10px 0 10px 36px;
+	padding: 10px 10px 10px 36px;
   	color: #fff;
 }
 
@@ -26,5 +26,10 @@
 	padding: 10px 0 21px 10px;
 }
 
+.issues_block{
+	min-width: 50%;
+	text-align: center;
+	font-size: 24px;
+}
 
 }

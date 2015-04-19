@@ -50,7 +50,6 @@ body {
 	color: white;
 }
 .content_button_footer{
-	margin-left: 43%;
  	border: 2px solid black;
 	color: black;
 }
@@ -128,7 +127,6 @@ div#articles_popular {
 }
 
 #title_categories > *{
-	padding-left: 30%;
 	padding-top: 2px;
 }
 #all-issues{
@@ -145,12 +143,7 @@ div#articles_popular {
 
 /*колонки номеров журналов по годам*/
 #issues{
-	height: 500px;
 	padding-top: 50px;
-}
-.issues_block{
-	min-width: 50%;
-	float: left;
 }
 
 /*---------------------------------------------------*/
@@ -187,9 +180,9 @@ div#articles_popular {
 	margin-left: 10px;
 }
 
-.white{
+#cat_title{
 	color: #fff;
-	float: left;
+	text-align: center;
 }
 
 .block_title span{
@@ -304,7 +297,7 @@ div#articles_popular {
 }
 
 #cat_block {
-	padding-left: 29%;
+	display: inline-block;
 	margin-top: 15px;
 	max-width: 44%;
 }
