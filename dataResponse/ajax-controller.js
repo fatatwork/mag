@@ -1,28 +1,32 @@
 $( function() {
-var xmlDoc = null;
 	$('#btn_more_actual').click(function(){
-		getNewData(this.id);
+		var xmlDocRet = getNewData(this.id);
 	});
 
-function actualArticleParser(){
-	var main_elements = _xmlDoc.getElementsByTagName("ARTICLE");
-	var output;
+function actualArticleParser(xmlForParse, btn_id){
+	var main_elements = xmlForParse.getElementsByTagName("ARTICLE");
+	var output ="";
 	for(var i=0; i<main_elements.length; ++i){
-		var title = main_elements[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue;
+		var title = main_elements[i].getElementsByTagName("TITLE")[0].textContent;
 		var authors_arr = main_elements[i].getElementsByTagName("AUTHOR");
-		var authors;
 		/*Парсим авторов*/
+		var authors = "";
 		for(var j=0; j<authors_arr.length; ++j){
-			authors +=authors_arr[j];
+			authors += authors_arr[j].textContent;
 			if(j+1 < authors_arr.length){
 				authors += ", ";
 			}
 		}
 		/*Делаем вывод*/
-		output += "<div>" +	title + "<span>" + authors + "</span></div>";
+		output += "<div>" +	title + "<br><span>" + authors + "</span></div>";
 		/*Записываем изменения на страницу*/
-		document.getElementById('content_actual').innerHTML += output;
 	}
+	var button_ob = $("#"+btn_id);
+	button_ob.detach(); /*Удаляем кнопку из прежнего положения*/
+	$("#content_actual .clearfix").remove();
+	document.getElementById('content_actual').innerHTML += output + "<div class=\"clearfix\"></div>";
+	$("#content_actual div:not(#" + btn_id + ", .clearfix)").addClass("article_actual visible animated fadeIn");
+	button_ob.appendTo("#content_actual"); /*Возвращаем кнопку на прежнее место*/
 }
 
 function getNewData(btn_id){
@@ -37,41 +41,20 @@ function getNewData(btn_id){
 			if(this.status == 200){
 				if(this.responseXML != null){
 					clearTimeout(timeoutHandle); //Отменяем действие таймера ошибки (ведь все получилось)
-					var xmlDoc=this.responseXML; /*Получили XML документ с информацией о статьях*/
-					var main_elements = xmlDoc.getElementsByTagName("ARTICLE");
-					var output ="";
-					for(var i=0; i<main_elements.length; ++i){
-						var title = main_elements[i].getElementsByTagName("TITLE")[0].textContent;
-						var authors_arr = main_elements[i].getElementsByTagName("AUTHOR");
-						/*Парсим авторов*/
-						var authors = "";
-						for(var j=0; j<authors_arr.length; ++j){
-							authors += authors_arr[j].textContent;
-							if(j+1 < authors_arr.length){
-								authors += ", ";
-							}
-						}
-						/*Делаем вывод*/
-						output += "<div>" +	title + "<span>" + authors + "</span></div>";
-						/*Записываем изменения на страницу*/
-				}
-				var button_ob = $("#"+btn_id);
-				button_ob.detach(); /*Удаляем кнопку из прежнего положения*/
-				$("#content_actual .clearfix").remove();
-				document.getElementById('content_actual').innerHTML += output + "<div class=\"clearfix\"></div>";
-				$("#content_actual div:not(#" + btn_id + ", .clearfix)").addClass("article_actual visible animated fadeIn");
-				button_ob.appendTo("#content_actual"); /*Возвращаем кнопку на прежнее место*/
+					xmlDoc=this.responseXML; /*Получили XML документ с информацией о статьях*/
+					actualArticleParser(xmlDoc, btn_id);
 			}
 				else{
 					alert("Ошибка AJAX: Данные не получены");
+					clearTimeout(timeoutHandle);
 				}
 			}
 			else{
 				errorHandler(this.statusText);
+				clearTimeout(timeoutHandle);
 			}
 		};
 	}
-	
 	request.send(params); /*Собственно отправка запроса*/
 	var timeoutHandle = setTimeout( function(){ /*Таймаут на соединение*/
     	request.abort(); errorHandler("Время ожидания вышло. Проверьте соединение и попробуйте ещё раз.") 
@@ -96,6 +79,7 @@ function getNewData(btn_id){
 		}
 		return request;
 	}
+return xmlDoc;
 }
 
 function errorHandler(errorText){

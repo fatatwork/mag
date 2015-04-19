@@ -1,0 +1,128 @@
+@media only screen and (min-width: 917px) {
+
+#header {
+	color: #fff;
+	min-width: 100%;
+	border-bottom: 1px dashed #fff;
+	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
+	display: block;
+	padding: 11px 0 0;
+	position: fixed;
+	z-index: 600;
+}
+
+#page_title {
+	padding-left: 20px;
+	font-size: 20px;
+	float: left;
+}
+
+#main_menu .separator {
+	margin-top: 8px;	
+}
+
+#main_menu{
+  margin-left: 7%;
+  float: left;
+  vertical-align: middle;
+  -webkit-margin-before: 0em;
+}
+
+#main_menu li {
+	padding: 4px;
+	display: inline;
+}
+#main_menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.separator {
+    width: 1px;
+    height: 7px;
+    background: rgba(255,255,255,.7);
+    display: inline-block;
+    padding-top: 5px;
+}
+
+#search_form {
+  float: right;
+}	
+
+/*строка поиска*/
+.search{
+  margin-bottom: 2px;
+  margin-top: 1px;
+}
+.search_img{
+  margin: 5px 5px 0px -4px;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: top;
+}
+
+.search_input{
+font-size: 11px;
+  min-width: 113px;
+  width: 183px;
+  padding: 0;
+  height: 15px;
+  border: 1px #7a88e9 solid;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  padding-left: 5px;
+}
+
+.article_actual {
+	background: url('/design/arrow.png') no-repeat;
+ 	background-size: 3%;
+  	background-position: 0% 47%;
+  	padding: 10px 0 10px 36px;
+  	font-size: 14px;
+  	color: #fff;
+	max-width: 52%;
+	margin: 20px 0 20px 23%;
+}
+
+.article_actual span {
+	float: right;
+	padding-right: 40px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+#content_actual{
+	padding: 20px 0 20px 0;
+}
+
+.issue_year_right, .issue_year_left{
+	font-family: 'Open Sans';
+	font-size: 43px;
+}
+.issue_year_right{
+	text-align: left;
+	padding-left: 30px;
+}
+.issue_year_left{
+	text-align: right;
+	padding-right: 30px;
+}
+.journal_left, .journal_right{
+	font-family: 'Open Sans';
+	font-size: 30px;
+}
+.journal_left{
+	text-align: right;;
+	padding-right: 30px;
+}
+.journal_right{
+	text-align: left;
+	padding-left: 30px;
+}
+
+}

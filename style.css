@@ -1,7 +1,10 @@
-@media only screen and (min-width: 917px) {
+@import url(/style_mobile.css);
+@import url(/style_desktop.css);
+
 html {
 	margin:0px;
 }
+
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #000;
@@ -18,55 +21,6 @@ body {
 	clear : both;
 }
 
-#header {
-	color: #fff;
-	min-width: 100%;
-	border-bottom: 1px dashed #fff;
-	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
-	display: block;
-	padding: 11px 0 0;
-	position: fixed;
-	z-index: 600;
-}
-
-#page_title {
-	padding-left: 20px;
-	font-size: 20px;
-	float: left;
-}
-
-#main_menu .separator {
-	margin-top: 8px;	
-}
-
-#main_menu{
-  margin-left: 7%;
-  float: left;
-  vertical-align: middle;
-  -webkit-margin-before: 0em;
-}
-
-#main_menu li {
-	padding: 4px;
-	display: inline;
-}
-#main_menu a{
-	color: white;
-	text-decoration: none;
-}
-
-.separator {
-    width: 1px;
-    height: 7px;
-    background: rgba(255,255,255,.7);
-    display: inline-block;
-    padding-top: 5px;
-}
-
-#search_form {
-  float: right;
-}	
-
 #title_actual {
 	background: url('/design/stetoscope_img.png');
 	background-size: 40%;
@@ -76,26 +30,22 @@ body {
 	padding-top: 60px;
 }
 
-#content_actual {
-	padding: 21px 0 21px 24%;
+.btn_center{
+	text-align: center;
+	margin: 20px 0 10px 0;
 }
 
-#content_actual > * {
-	max-width: 70%;
-}
 .content_button_header, .content_button_footer{
   display: inline;
   text-decoration: none;
-  text-align: center;
   padding: 5px 12px 5px 12px;
   font-size: 18px;
 }
+
 .content_button_header, .content_button_footer, .category_button{
 	cursor: pointer;
 }
 .content_button_header{
-	margin-top: 2%;
-	margin-left: 25%;
 	border: 2px solid white;
 	color: white;
 }
@@ -129,22 +79,6 @@ body {
 	opacity: 0.92;
 	background-color: white;
 	color: black;
-}
-.article_actual {
-	background: url('/design/arrow.png') no-repeat;
- 	background-size: 3%;
-  	background-position: 0% 47%;
-  	display: inline-block;
-  	padding: 10px 0 10px 36px;
-  	font-size: 14px;
-  	color: #fff;
-}
-
-.article_actual span {
-	float: right;
-	padding-right: 40px;
-	padding-top: 10px;
-	font-size: 12px;
 }
 
 #title_popular {
@@ -206,7 +140,6 @@ div#articles_popular {
 #all-issues-title{
 	padding-left: 61%;
 	padding-top: 33px;
-	width: 400px;
 	color: white;
 }
 
@@ -215,41 +148,11 @@ div#articles_popular {
 	height: 500px;
 	padding-top: 50px;
 }
-.left_column{
-	height: 50%;
-	width: 50%;
+.issues_block{
+	min-width: 50%;
 	float: left;
-	//padding-right: 10px;
 }
-.right_column{
-	height: 50%;
-	width: 50%;
-	float: right;
-}
-.issue_year_right, .issue_year_left{
-	font-family: 'Open Sans';
-	font-size: 43px;
-}
-.issue_year_right{
-	text-align: left;
-	padding-left: 30px;
-}
-.issue_year_left{
-	text-align: right;
-	padding-right: 30px;
-}
-.journal_left, .journal_right{
-	font-family: 'Open Sans';
-	font-size: 30px;
-}
-.journal_left{
-	text-align: right;;
-	padding-right: 30px;
-}
-.journal_right{
-	text-align: left;
-	padding-left: 30px;
-}
+
 /*---------------------------------------------------*/
 
 /*Дeскрипшены внизу страницы*/
@@ -268,33 +171,6 @@ div#articles_popular {
 	  border-top: 2px solid gray;
 	  margin-top: 70px;
 	  padding-left: 100px;
-}
-/*строка поиска*/
-.search{
-  margin-bottom: 2px;
-  margin-top: 1px;
-}
-.search_img{
-  margin: 5px 5px 0px -4px;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: top;
-}
-.search_input{
-font-size: 11px;
-  min-width: 113px;
-  width: 183px;
-  padding: 0;
-  height: 15px;
-  border: 1px #7a88e9 solid;
-  border-right: none;
-  border-radius: 4px 0 0 4px;
-  -webkit-border-radius: 4px 0 0 4px;
-  -moz-border-radius: 4px 0 0 4px;
-  padding-left: 5px;
 }
 
 .title_block > * {
@@ -569,4 +445,3 @@ font-size: 11px;
 	100% {opacity: 1;}
 }
 
-}
