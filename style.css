@@ -96,15 +96,10 @@ body {
 	width: 40%;
 }
 
-#articles_popular {
-	width: 57%;
-	line-height: 37px;
-}
-
 div#articles_popular {
 	display:inline;
 	padding-left: 10px;
-	padding-top: 6px;
+	padding-top: 4px;
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space: nowrap;
@@ -121,14 +116,19 @@ div#articles_popular {
 	color:blue;
 }
 
-#title_categories {
+#categories {
 	background: url('/design/bg-rules.gif');
 	padding-bottom: 26px;
 }
 
-#title_categories > *{
+#categories > *{
 	padding-top: 2px;
 }
+
+#cat_title_block, #cat_block{
+	margin-left: 24%;
+}
+
 #all-issues{
   background: url('/design/newsandpublications-left.jpg') no-repeat;
   background-size: 100%;
@@ -169,20 +169,17 @@ div#articles_popular {
 .title_block > * {
      padding-left: 30%;
      padding-top: 50px;
- }
+ }	
 
-.block_title, #ellipses_img{
-	  margin-top: 35px;
-}
-
-.block_title {
+.block_title, #ellipses_img {
 	font-size: 30px;
 	margin-left: 10px;
+	margin-top: 35px;
 }
 
 #cat_title{
 	color: #fff;
-	text-align: center;
+	float: left;
 }
 
 .block_title span{
@@ -206,13 +203,14 @@ div#articles_popular {
 }
 
 #ellipses_img {
-	  height: 84px;
-	  margin-right: 114px;
-	  float: left;
+	display: block;
+	  height: 33px;
+  	width: 70px;
+  	float: left;
 	  background: url('/design/ellipses.png') no-repeat;
 	  background-size: 70px;
-	  background-position: 0% 19%;
-	  margin-left: 18px;
+	  background-position: 0% 100%;
+	  margin-left: 30px;
 }
 #mag_img{
   height: 53px;
@@ -223,10 +221,10 @@ div#articles_popular {
   background-position: 9% 15%;
   float: right;
 }
+
 .rect {
 	box-shadow: -6.5px 5.99px 10px 1px rgba( 0, 0, 0, .7 );
 	height: 27px;
-	margin: 10px 0 10px;
 }
 
 .rect span {
@@ -298,6 +296,7 @@ div#articles_popular {
 
 #cat_block {
 	display: inline-block;
+	padding-left: 30px;
 	margin-top: 15px;
 	max-width: 44%;
 }
@@ -437,4 +436,3 @@ div#articles_popular {
 	50% {display:none; opacity: 0;}
 	100% {opacity: 1;}
 }
-
