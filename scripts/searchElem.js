@@ -11,25 +11,25 @@ $(document).ready(function(){ /*Когда документ загружен*/
 
          // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
         callbackFunction: function(){
-                var obj_arr = searchObjects("rect");
+            /*Функция добавляет id с CSS анимацией*/
+                var obj_rect = searchObjects("rect");
                 addIdEnum(obj_arr, "rate_rect");
+                addClassTo()
             }
-    }); /*Функция добавляет id с CSS анимацией*/
+/*.separator_rate, .eye_icon, .rect span*/
+
+    }); 
 
     $('#cat_block').viewportChecker({
         classToAdd: 'visible animated flipInX', offset: 200, repeat: false
     });
     
-    $('#btn1').viewportChecker({
+    $('#btn1, #btn2, .content_button_header, .article_actual').viewportChecker({
         classToAdd: 'visible animated fadeIn', offset: 20, repeat: false
     });    
     
     $('#issues').viewportChecker({
         classToAdd: 'visible animated zoomInUp', offset: 100, repeat: false
-    });
-
-    $('#btn2').viewportChecker({
-        classToAdd: 'visible animated fadeIn', offset: 20, repeat: false
     });
 
     $('#block1, #block2').viewportChecker({
@@ -61,11 +61,13 @@ function addIdEnum(ob_array, newId){
     }
 }
 
-function addClassTo(ob_array, myClass){
+function addClassTo(myClass){
+    var elements = window.document.getElementsByTagName('*');/*Получаем все элементы*/
+    var objects = [];
+    var regClassName = new RegExp(" {0,}" + myClass + " {0,}", 'ig');
     for(var i=0; i<ob_array.length; ++i){
-        var regClassName = new RegExp(myClass + "|" + " {0,}" + myClass + " {0,}", 'ig');
-        if(regClassName.test(objects[i].className)){
-            objects[i].className += " ";
+        if(ob_array[i].className != ""){
+            ob_array[i].className += " ";
         }
         objects[i].className += myClass;
     }

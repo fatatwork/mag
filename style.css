@@ -367,8 +367,7 @@ font-size: 11px;
   	margin-top: 2px;
  	margin-right: -70px;
 }
-
-.separator_rate, .eye_icon, .rect span {
+.appearRateInfo{
 	-webkit-animation-name: appearNumbers;
     -webkit-animation-duration: 6s;
 	animation-name: appearNumbers;
