@@ -11,10 +11,9 @@ $(document).ready(function(){ /*Когда документ загружен*/
 
          // Callback to do after a class was added to an element. Action will return "add" or "remove", depending if the class was added or removed
         callbackFunction: function(){
-            /*Функция добавляет id с CSS анимацией*/
                 var obj_rect = searchObjects("rect");
-                addIdEnum(obj_arr, "rate_rect");
-                addClassTo()
+                addIdEnum(obj_rect, "rate_rect");
+                addClass("info_block", "appearRateInfo");   
             }
 /*.separator_rate, .eye_icon, .rect span*/
 
@@ -54,6 +53,7 @@ function searchObjects(myClass){
 }
 
 function addIdEnum(ob_array, newId){
+    /*Функция добавляет id с CSS анимацией*/
     for(var i=0; i<ob_array.length; ++i){
         if(ob_array[i].id == ""){
             ob_array[i].id += newId + (i+1);
@@ -61,14 +61,12 @@ function addIdEnum(ob_array, newId){
     }
 }
 
-function addClassTo(myClass){
-    var elements = window.document.getElementsByTagName('*');/*Получаем все элементы*/
-    var objects = [];
-    var regClassName = new RegExp(" {0,}" + myClass + " {0,}", 'ig');
+function addClass(myClass, newClass){
+    var ob_array = searchObjects(myClass);
     for(var i=0; i<ob_array.length; ++i){
         if(ob_array[i].className != ""){
             ob_array[i].className += " ";
         }
-        objects[i].className += myClass;
+        ob_array[i].className += newClass;
     }
 }
