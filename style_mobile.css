@@ -1,5 +1,26 @@
 @media only screen and (min-width: 10px) and (max-width: 1148px) {
 
+#mobile_panel{
+	display: inline-block;
+	min-width: 100%;
+  	padding: 10px 0;
+	border-bottom: 1px dashed #fff;
+	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
+}
+
+#mobile_panel h3{
+	margin-left: 20px;
+	display: inline;
+	color: #fff;
+}
+
+.toggle-button{
+	display: inline;
+	color: #fff;
+	border-right: 2px solid #fff;
+	padding: 15px;
+}
+
 .issues_block{
 	width: 90%;
 	margin: 20px 0 20px 24px;
@@ -32,7 +53,7 @@
 }
 
 .rect{
-		margin: 50px 0 10px;
+	margin: 50px 0 10px;
 }
 
 #articles_popular {
@@ -51,6 +72,14 @@
 	width: 90% !important;
 	z-index: -1;
 	top: 10px;
+}
+
+.search{
+	margin-left: 18px;
+}
+
+#page_title{
+	display: none;
 }
 
 
@@ -82,9 +111,6 @@
 .slideout-open .slideout-menu {
   display: block;
 }
-
-
-
 
 .panel {
   background-color: #fff;
@@ -139,11 +165,6 @@
   padding: 10px 20px;
 }
 
-.panel {
-  text-align: center;
-  padding-top: 5px;
-  min-height: 100%;
-}
 
 /**
  * Header
