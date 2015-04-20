@@ -61,12 +61,3 @@ function addIdEnum(ob_array, newId){
     }
 }
 
-function addClass(myClass, newClass){
-    var ob_array = searchObjects(myClass);
-    for(var i=0; i<ob_array.length; ++i){
-        if(ob_array[i].className != ""){
-            ob_array[i].className += " ";
-        }
-        ob_array[i].className += newClass;
-    }
-}

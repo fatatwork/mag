@@ -1,14 +1,4 @@
 $(document).ready(function(){
-	$(function() {
-	    $("a.nav").click(function() {
-	        $("body").animate({
-	            scrollTop: ($($(this).attr("href")).offset().top - 53) + "px"
-	        }, {
-	            duration: 500
-	        });
-	        return false;
-	    });
-    });
 	//.parallax(xPosition, speedFactor, outerHeight) options:
 	//xPosition - Horizontal position of the element
 	//speedFactor - speed to move relative to vertical scroll.

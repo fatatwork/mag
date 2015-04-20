@@ -11,6 +11,10 @@
 	z-index: 600;
 }
 
+#mobile_panel{
+	display: none;
+}
+
 #page_title {
 	display: inline;
 	padding-left: 20px;
@@ -136,10 +140,6 @@ font-size: 11px;
 .journal_right{
 	text-align: left;
 	padding-left: 30px;
-}
-
-.mobile_menu, .toggle-button{
-
 }
 
 .menu-section-title{

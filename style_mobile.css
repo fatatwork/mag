@@ -18,7 +18,7 @@
 	display: inline;
 	color: #fff;
 	border-right: 2px solid #fff;
-	padding: 15px;
+  padding: 15px 16px 11px;
 }
 
 .issues_block{
@@ -82,7 +82,35 @@
 	display: none;
 }
 
+#title_actual {
+  background-size: 53% !important;
+  background-position: 70% 17% !important;
+}
 
+#title_popular {
+  background-size: 64% !important;
+}
+
+.search_img {
+  margin: 5px 10px 0 -4px !important;
+}
+
+.rect span {
+  margin-top: 3px !important;
+}
+
+#all-issues-title {
+  padding-left: 39% !important;
+}
+
+#mag_img {
+  background-position: 9% 100% !important;
+}
+
+#all-issues {
+  background-size: 167% !important;
+  background-position: 96% 84% !important;
+}
 /*-------Меню для мобильных устройств---------*/
 .slideout-menu {
   position: fixed;
@@ -289,6 +317,17 @@
 }
 
 
-/*-------Меню для мобильных устройств---------*/
+/*-------О журнале---------*/
+#title_about{
+  height: 250px !important;
+}
+
+.content_block {
+  max-width: 80% !important;
+}
+
+.content_block span{
+  white-space: nowrap;
+}
 
 }
