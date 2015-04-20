@@ -24,7 +24,7 @@ body {
 	border-bottom: 1px dashed #fff;
 	background: #3d4898 url('/design/blue_grr.jpg') repeat-x center center;
 	display: block;
-	padding: 12px 0 5px;
+	padding: 11px 0 0;
 	position: fixed;
 	z-index: 600;
 }
@@ -545,7 +545,7 @@ font-size: 11px;
 
 @keyframes left_to_right5 {
 	from {width: 0%;}
-	to {width: 35%;}
+	to {width: 29%;}
 }
 
 @-webkit-keyframes left_to_right5 {
