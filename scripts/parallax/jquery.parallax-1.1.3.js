@@ -19,7 +19,7 @@ http://www.gnu.org/licenses/gpl.html
 		windowHeight = $window.height();
 	});
 
-	$.fn.parallax = function(xpos, speedFactor, heightCorrect) {
+	$.fn.parallax = function(xpos, speedFactor, heightCorrect, speedRounded) {
 		var $this = $(this);
 		var getHeight;
 		var firstTop;
@@ -38,10 +38,10 @@ http://www.gnu.org/licenses/gpl.html
 		if (arguments.length < 1 || xpos === null) xpos = "50%";
 		if (arguments.length < 2 || speedFactor === null) speedFactor = 0.1;
 		if (arguments.length < 3 || heightCorrect === null) heightCorrect = 0;
-
+		if (arguments.length < 4 || speedRounded === null) speedRounded = false;
 		// function to be called whenever the window is scrolled or resized
 		function update(){
-			var pos = $window.scrollTop();				
+			var pos = $window.scrollTop();			
 
 			$this.each(function(){
 				var $element = $(this);
@@ -52,19 +52,13 @@ http://www.gnu.org/licenses/gpl.html
 				if (top + height < pos || top > pos + windowHeight) {
 					return;
 				}
-				var currentPos = Math.round(((((((firstTop - pos)) * speedFactor))/height)*100) + heightCorrect);
+				var currentPos = ((pos - firstTop)*speedFactor)+heightCorrect;
+				if(speedRounded == true){
+					currentPos = Math.round(currentPos);
+				}
 				
-				if(currentPos < 0){
-					$this.css('backgroundPosition', xpos + " " + 0 + "%");
-				}
-				else{
-					if(currentPos > 100){
-						$this.css('backgroundPosition', xpos + " " + 100 + "%");
-					}
-					else{
-						$this.css('backgroundPosition', xpos + " " + currentPos + "%");
-					}
-				}
+				$this.css('backgroundPosition', xpos + " " + currentPos + "px");
+			
 			});
 		}		
 
