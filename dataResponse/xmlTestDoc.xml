@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<PRODUCTS>
+     <ARTICLE>
+          <TITLE>Тестовая статья 2 кайонибудь другой текст для того чтобы лучше было видно</TITLE>
+          <AUTHOR>Р. Г. Ашуров</AUTHOR>
+          <AUTHOR>В. С. Терехов</AUTHOR>
+          <TYPE>popular</TYPE>
+          <LINK>#</LINK>
+     </ARTICLE>
+     <ARTICLE>
+          <TITLE>Тестовая статья 1 еще немного текста для теста</TITLE>
+          <AUTHOR>Р. Г. Ашуров</AUTHOR>
+          <AUTHOR>В. С. Терехов</AUTHOR>
+          <TYPE>popular</TYPE>
+          <LINK>#</LINK>
+     </ARTICLE>
+
+     <CATEGORY>
+          <TITLE> Product #2 </TITLE>
+          <TYPE></TYPE>
+          <LINK></LINK>
+     </CATEGORY>
+</PRODUCTS>

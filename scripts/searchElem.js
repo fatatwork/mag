@@ -13,7 +13,7 @@ $(document).ready(function(){ /*Когда документ загружен*/
         callbackFunction: function(){
                 var obj_rect = searchObjects("rect");
                 addIdEnum(obj_rect, "rate_rect");
-                addClass("info_block", "appearRateInfo");   
+                $('.info_block').addClass("appearRateInfo");
             }
 /*.separator_rate, .eye_icon, .rect span*/
 

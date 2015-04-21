@@ -90,6 +90,9 @@ body {
   padding: 5px 12px 5px 12px;
   font-size: 18px;
 }
+.content_button_header, .content_button_footer, .category_button{
+	cursor: pointer;
+}
 .content_button_header{
 	margin-top: 2%;
 	margin-left: 25%;

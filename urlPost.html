@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
 	<title>Пример использования AJAX</title>
 </head>
@@ -17,7 +15,7 @@
 		if (this.readyState == 4) {
 			if(this.status == 200){
 				if(this.responseText != null){
-					document.getElementById('info').innerHTML = this.responseText; /*Текст ответа сервера: весь html код*/
+					document.getElementById('info').innerHTML = this.responseText; /*Текст ответа сервера: весь html код - помещаем в элемент страницы info*/
 				}
 				else{
 					alert("Ошибка AJAX: Данные не получены");
