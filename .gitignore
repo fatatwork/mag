@@ -24,16 +24,6 @@ bin/
 ##PhpStorm
 #################
 .idea/
-##############
-##Разработка
-##############
-design/
-*.jpg
-*.jpeg
-*.gif
-*.png
-.fuse*
-############
 ## Sublime Text
 ############
 *.json
@@ -58,3 +48,4 @@ Desktop.ini
 parser_test.php
 /simplehtmldom
 parser.php
+node_modules
